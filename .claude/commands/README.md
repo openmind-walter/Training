@@ -129,6 +129,28 @@ The `update-git` command scans for these sensitive patterns:
 - Private RSA, EC, DSA keys
 - Begin/End Private Key markers
 
+## Full Documentation
+
+See [UPDATE-GIT-GUIDE.md](UPDATE-GIT-GUIDE.md) for comprehensive documentation including:
+- 7-step workflow details
+- Security pattern detection
+- 404 link validation
+- GitHub Pages setup
+- Troubleshooting guide
+- Integration examples
+
+## Quick Reference
+
+| Step | Purpose | Status |
+|------|---------|--------|
+| 1 | Validate GitHub Pages | Auto-creates workflow if missing |
+| 2 | Check 404 Links | Scans HTML for broken references |
+| 3 | Uncommitted Changes | Prompts to commit before push |
+| 4 | Password Scanning | Detects hardcoded secrets |
+| 5 | Advanced Secrets | Uses truffleHog or git-secrets |
+| 6 | Push to GitHub | Deploys to main branch |
+| 7 | Update Metadata | Updates description, topics, README |
+
 ## Adding New Commands
 
 1. Create a new `.sh` file in this directory
