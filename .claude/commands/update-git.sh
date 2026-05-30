@@ -52,21 +52,21 @@ check_404_links() {
   log_info "Checking for 404 broken links in HTML files..."
 
   local broken_links=0
-  local missing_files=()
 
-  # Extract all href and src attributes pointing to local files
-  local refs=$(grep -oh 'href="[^"]*"\|src="[^"]*"' *.html 2>/dev/null | grep -v 'http' | sed 's/[href"=]*//g' | grep -v '^#' | sort -u)
+  # Extract all href and src attributes and filter to local files
+  # Use awk to cleanly extract values between quotes
+  local refs=$(grep -Eoh '(href|src)="[^"]*"' *.html 2>/dev/null | \
+    awk -F'"' '{print $2}' | \
+    grep -vE '^(https?:|mailto:|tel:|#|$)' | \
+    sort -u)
 
   for ref in $refs; do
-    # Skip anchors and mailto links
-    if [[ "$ref" == \#* ]] || [[ "$ref" == mailto:* ]] || [[ "$ref" == tel:* ]]; then
-      continue
-    fi
+    # Skip if empty
+    [[ -z "$ref" ]] && continue
 
     # Check if file exists
     if [ ! -f "$ref" ] && [ ! -d "$ref" ]; then
       log_error "Missing file: $ref"
-      missing_files+=("$ref")
       ((broken_links++))
     fi
   done
