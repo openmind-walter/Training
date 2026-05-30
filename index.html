@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Lumière — Fine French Dining, Singapore</title>
+  <meta name="description" content="Experience authentic French haute cuisine at Maison Lumière, Singapore's premier destination for refined Parisian dining.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Maison Lumière — return to top">
+        <span class="nav-logo-main">Maison Lumière</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#reservations" class="nav-link">Reservations</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" aria-label="Welcome to Maison Lumière">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-pre">Est. 2008 &middot; Singapore</p>
+        <h1 class="hero-title">Maison Lumi&egrave;re</h1>
+        <p class="hero-tagline">Authentic French cuisine in the heart of the city</p>
+        <a href="#reservations" class="btn-primary">Reserve a Table</a>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section id="menu" aria-labelledby="menu-heading">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <span class="section-label fade-in">À La Carte</span>
+          <h2 id="menu-heading" class="fade-in">Our Menu</h2>
+          <p class="section-intro fade-in">Each dish is composed with seasonal ingredients and classical French technique, honouring a culinary tradition that spans centuries.</p>
+        </div>
+
+        <!-- Entrées -->
+        <div class="menu-category fade-in">
+          <div class="category-header" aria-label="Entrées section">
+            <span class="category-rule" aria-hidden="true"></span>
+            <h3>Entr&eacute;es</h3>
+            <span class="category-rule" aria-hidden="true"></span>
+          </div>
+          <div class="dish-grid">
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80"
+                  alt="Escargots de Bourgogne — Burgundy snails baked in herbed garlic butter, served en coquille"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Escargots de Bourgogne</h4>
+                  <span class="dish-price">SGD&nbsp;28</span>
+                </div>
+                <p class="dish-desc">Burgundy snails baked in herbed garlic butter, served <em>en coquille</em> with toasted baguette</p>
+              </div>
+            </article>
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                  alt="Soupe à l'Oignon — classic French onion soup slow-cooked and topped with golden Gruyère crust"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Soupe &agrave; l&rsquo;Oignon</h4>
+                  <span class="dish-price">SGD&nbsp;22</span>
+                </div>
+                <p class="dish-desc">Classic French onion soup slow-cooked for six hours, crowned with a golden Gruy&egrave;re crust</p>
+              </div>
+            </article>
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=80"
+                  alt="Foie Gras Poêlé — pan-seared duck foie gras served with brioche toast and fig compote"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Foie Gras Po&ecirc;l&eacute;</h4>
+                  <span class="dish-price">SGD&nbsp;48</span>
+                </div>
+                <p class="dish-desc">Pan-seared duck foie gras served with brioche toast, fig compote and a Sauternes reduction</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Plats Principaux -->
+        <div class="menu-category fade-in">
+          <div class="category-header" aria-label="Main courses section">
+            <span class="category-rule" aria-hidden="true"></span>
+            <h3>Plats Principaux</h3>
+            <span class="category-rule" aria-hidden="true"></span>
+          </div>
+          <div class="dish-grid">
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80"
+                  alt="Coq au Vin — free-range chicken braised in Burgundy wine with pearl onions and mushrooms"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Coq au Vin</h4>
+                  <span class="dish-price">SGD&nbsp;52</span>
+                </div>
+                <p class="dish-desc">Free-range chicken braised in Burgundy wine with pearl onions, lardons and wild mushrooms</p>
+              </div>
+            </article>
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1607353897046-dc7e0b012a5c?auto=format&fit=crop&w=800&q=80"
+                  alt="Canard à l'Orange — slow-roasted Challans duck breast with orange-cognac gastrique"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Canard &agrave; l&rsquo;Orange</h4>
+                  <span class="dish-price">SGD&nbsp;68</span>
+                </div>
+                <p class="dish-desc">Slow-roasted Challans duck breast with a classic orange-cognac gastrique and wilted endive</p>
+              </div>
+            </article>
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?auto=format&fit=crop&w=800&q=80"
+                  alt="Filet de Bœuf — pan-seared beef tenderloin with black truffle jus and pommes dauphine"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Filet de B&oelig;uf</h4>
+                  <span class="dish-price">SGD&nbsp;88</span>
+                </div>
+                <p class="dish-desc">Pan-seared beef tenderloin with black truffle jus, pommes dauphine and haricots verts</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category fade-in">
+          <div class="category-header" aria-label="Desserts section">
+            <span class="category-rule" aria-hidden="true"></span>
+            <h3>Desserts</h3>
+            <span class="category-rule" aria-hidden="true"></span>
+          </div>
+          <div class="dish-grid">
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80"
+                  alt="Crème Brûlée — classic Madagascan vanilla custard with a perfectly caramelized sugar crust"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Cr&egrave;me Br&ucirc;l&eacute;e</h4>
+                  <span class="dish-price">SGD&nbsp;18</span>
+                </div>
+                <p class="dish-desc">Classic Madagascan vanilla custard, topped with a perfectly caramelized sugar crust</p>
+              </div>
+            </article>
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+                  alt="Fondant au Chocolat — warm Valrhona dark chocolate lava cake with Tahitian vanilla ice cream"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Fondant au Chocolat</h4>
+                  <span class="dish-price">SGD&nbsp;22</span>
+                </div>
+                <p class="dish-desc">Warm Valrhona dark chocolate lava cake with Tahitian vanilla ice cream and praline crumble</p>
+              </div>
+            </article>
+
+            <article class="dish-card">
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&w=800&q=80"
+                  alt="Tarte Tatin — upside-down caramelized Fuji apple tart in buttery puff pastry with crème fraîche"
+                  loading="lazy"
+                  width="800" height="600">
+              </div>
+              <div class="dish-body">
+                <div class="dish-top">
+                  <h4 class="dish-name">Tarte Tatin</h4>
+                  <span class="dish-price">SGD&nbsp;20</span>
+                </div>
+                <p class="dish-desc">Upside-down caramelized Fuji apple tart in buttery puff pastry, served with cr&egrave;me fra&icirc;che</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <span class="section-label fade-in">Our Guests</span>
+          <h2 id="testimonials-heading" class="fade-in">What Our Guests Say</h2>
+        </div>
+
+        <div class="carousel-container fade-in">
+          <div class="carousel-wrapper" role="region" aria-label="Guest testimonials carousel" aria-live="polite">
+            <div class="carousel-track" id="carousel-track">
+
+              <article class="testimonial-card" role="group" aria-label="Testimonial 1 of 3">
+                <div class="stars" aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote>
+                  <p>&ldquo;An extraordinary dining experience &mdash; the Coq au Vin was transcendent. The service was impeccable, the ambiance flawless. A meal we will never forget.&rdquo;</p>
+                </blockquote>
+                <footer class="testimonial-author">
+                  <span class="author-name">Isabelle Moreau</span>
+                  <span class="author-detail">Paris, France</span>
+                </footer>
+              </article>
+
+              <article class="testimonial-card" role="group" aria-label="Testimonial 2 of 3">
+                <div class="stars" aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote>
+                  <p>&ldquo;From the moment we arrived, every detail felt curated and deliberate. The Foie Gras Po&ecirc;l&eacute; was perfection on a plate. Maison Lumi&egrave;re is in a class of its own.&rdquo;</p>
+                </blockquote>
+                <footer class="testimonial-author">
+                  <span class="author-name">James Whitmore</span>
+                  <span class="author-detail">London, United Kingdom</span>
+                </footer>
+              </article>
+
+              <article class="testimonial-card" role="group" aria-label="Testimonial 3 of 3">
+                <div class="stars" aria-label="Five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote>
+                  <p>&ldquo;The finest French cuisine outside of Paris. The Chef&rsquo;s tasting menu is an absolute revelation. I recommend Maison Lumi&egrave;re to every discerning food lover visiting Singapore.&rdquo;</p>
+                </blockquote>
+                <footer class="testimonial-author">
+                  <span class="author-name">Mei-Lin Chen</span>
+                  <span class="author-detail">Singapore</span>
+                </footer>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="carousel-controls" role="group" aria-label="Carousel navigation">
+            <button class="carousel-btn" id="prev-btn" aria-label="Previous testimonial">&#8592;</button>
+            <div class="carousel-dots" id="carousel-dots" role="list">
+              <button class="dot active" data-index="0" aria-label="Go to testimonial 1" aria-pressed="true" role="listitem"></button>
+              <button class="dot" data-index="1" aria-label="Go to testimonial 2" aria-pressed="false" role="listitem"></button>
+              <button class="dot" data-index="2" aria-label="Go to testimonial 3" aria-pressed="false" role="listitem"></button>
+            </div>
+            <button class="carousel-btn" id="next-btn" aria-label="Next testimonial">&#8594;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== RESERVATIONS ===================== -->
+    <section id="reservations" aria-labelledby="reservations-heading">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <span class="section-label fade-in">Book Your Table</span>
+          <h2 id="reservations-heading" class="fade-in">Reserve a Table</h2>
+          <p class="section-intro fade-in">We invite you to join us for an evening of refined French cuisine. Please complete the form below and we will confirm your reservation within 24&nbsp;hours.</p>
+        </div>
+
+        <div class="form-wrap fade-in">
+          <form id="reservation-form" novalidate aria-label="Reservation enquiry form">
+            <div class="form-grid">
+
+              <div class="form-group">
+                <label for="full-name">Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="text" id="full-name" name="full-name" autocomplete="name"
+                       required aria-required="true" placeholder="Jean Dupont">
+                <span class="field-error" id="error-name" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email"
+                       required aria-required="true" placeholder="jean@example.com">
+                <span class="field-error" id="error-email" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel"
+                       required aria-required="true" placeholder="+65 9000 0000">
+                <span class="field-error" id="error-phone" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="guests">Number of Guests <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="number" id="guests" name="guests" min="1" max="20"
+                       required aria-required="true" placeholder="2">
+                <span class="field-error" id="error-guests" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="date">Preferred Date <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="date" id="date" name="date" required aria-required="true">
+                <span class="field-error" id="error-date" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="time">Preferred Time <span class="required-mark" aria-hidden="true">*</span></label>
+                <select id="time" name="time" required aria-required="true">
+                  <option value="" disabled selected>Select a time</option>
+                  <optgroup label="Lunch Service">
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="13:30">1:30 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                  </optgroup>
+                  <optgroup label="Dinner Service">
+                    <option value="18:00">6:00 PM</option>
+                    <option value="18:30">6:30 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                  </optgroup>
+                </select>
+                <span class="field-error" id="error-time" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="requests">Special Requests <span class="optional-mark">(optional)</span></label>
+                <textarea id="requests" name="requests" rows="4"
+                          placeholder="Dietary requirements, celebrations, seating preferences&#8230;"></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn-primary btn-submit">Request Reservation</button>
+          </form>
+
+          <div id="form-success" hidden role="alert" aria-live="assertive">
+            <div class="success-icon" aria-hidden="true">&#10022;</div>
+            <h3>Your table is being arranged</h3>
+            <p id="success-message"></p>
+            <p class="success-note">A confirmation will be sent to your email address. We look forward to welcoming you.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <span class="footer-logo">Maison Lumi&egrave;re</span>
+        <p class="footer-tagline">Fine French Dining &middot; Singapore</p>
+        <p class="footer-desc">Celebrating the art of French cuisine<br>since 2008.</p>
+      </div>
+
+      <div class="footer-info">
+        <h4>Visit Us</h4>
+        <address>
+          15 Raffles Place, Level&nbsp;38<br>
+          Singapore 048616
+        </address>
+        <a href="tel:+6568880001" class="footer-contact">+65 6888 0001</a>
+        <a href="mailto:reservations@maisonlumiere.sg" class="footer-contact">reservations@maisonlumiere.sg</a>
+      </div>
+
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+        <dl class="hours-list">
+          <dt>Lunch</dt>
+          <dd>Tue&ndash;Sun, 12:00&ndash;14:30</dd>
+          <dt>Dinner</dt>
+          <dd>Tue&ndash;Sun, 18:00&ndash;22:00</dd>
+          <dt>Closed</dt>
+          <dd>Mondays</dd>
+        </dl>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <ul class="social-links" role="list">
+          <li><a href="#" aria-label="Maison Lumière on Instagram" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="#" aria-label="Maison Lumière on Facebook" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="#" aria-label="Maison Lumière on TripAdvisor" rel="noopener noreferrer">TripAdvisor</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-divider" aria-hidden="true">&#10022;</p>
+      <p>&copy; 2026 Maison Lumi&egrave;re. All rights reserved. Crafted with care in Singapore.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
