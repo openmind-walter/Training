@@ -5,6 +5,19 @@ A sophisticated, fully responsive single-page restaurant booking website for an 
 **Live Site:** https://openmind-walter.github.io/Training/  
 **Repository:** https://github.com/openmind-walter/Training
 
+## About
+
+Maison Lumière is a demonstration of modern web design principles applied to a fine dining context. The site showcases a fully functional, single-page restaurant booking experience with no dependencies — just pure HTML, CSS, and vanilla JavaScript.
+
+**Visit the live site:** [https://openmind-walter.github.io/Training/](https://openmind-walter.github.io/Training/)
+
+This project demonstrates:
+- Clean, semantic markup with full accessibility
+- Responsive design without frameworks
+- Client-side form validation and UX patterns
+- Animation and interaction design
+- Production-ready code organization
+
 ## 🎯 Features
 
 - **Elegant hero section** with Unsplash background, animated text entrance, and smooth scroll navigation
