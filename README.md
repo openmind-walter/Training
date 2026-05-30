@@ -2,6 +2,9 @@
 
 A sophisticated, fully responsive single-page restaurant booking website for an upscale French restaurant. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools.
 
+**Live Site:** https://openmind-walter.github.io/Training/  
+**Repository:** https://github.com/openmind-walter/Training
+
 ## 🎯 Features
 
 - **Elegant hero section** with Unsplash background, animated text entrance, and smooth scroll navigation
