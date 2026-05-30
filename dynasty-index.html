@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynasty — Fine Chinese Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dynasty-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-char">朝</span>
+                <span class="logo-text">Dynasty</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specialties">Chef's Specialties</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#reservations">Reserve</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=80" alt="Dynasty Restaurant">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-lanterns">
+                <div class="lantern left"></div>
+                <div class="lantern right"></div>
+            </div>
+
+            <h1 class="hero-title">Dynasty</h1>
+            <p class="hero-subtitle">Exquisite Chinese Fine Dining</p>
+            <p class="hero-tagline">Where tradition meets culinary excellence</p>
+
+            <a href="#reservations" class="cta-button">Reserve Your Table</a>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story fade-in">
+        <div class="section-container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>Dynasty represents the pinnacle of Chinese culinary artistry. For over a decade, we've been dedicated to delivering an unforgettable dining experience that honors traditional recipes while embracing contemporary techniques.</p>
+                    <p>Our master chefs bring decades of experience from Beijing, Shanghai, and Sichuan, crafting each dish with meticulous attention to flavor, presentation, and the ancient principles of balance.</p>
+                    <div class="story-highlights">
+                        <div class="highlight">
+                            <span class="highlight-number">50+</span>
+                            <span class="highlight-label">Signature Dishes</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">5★</span>
+                            <span class="highlight-label">Michelin Recognition</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">10k+</span>
+                            <span class="highlight-label">Happy Guests</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" alt="Chef at Dynasty">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="section-container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Discover the essence of authentic Chinese cuisine</p>
+
+            <!-- Appetizers -->
+            <div class="menu-category fade-in">
+                <h3 class="category-title">
+                    <span class="category-number">一</span>
+                    Appetizers
+                </h3>
+                <div class="dishes-grid">
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1529021891617-2a9091cf6fcb?auto=format&fit=crop&w=400&q=80" alt="Spring Rolls">
+                        <div class="dish-content">
+                            <h4>Jade Spring Rolls</h4>
+                            <p class="dish-desc">Crispy pastry with vegetable and shrimp</p>
+                            <p class="dish-price">¥88</p>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1605521842637-b86b6a9e1b2b?auto=format&fit=crop&w=400&q=80" alt="Dim Sum">
+                        <div class="dish-content">
+                            <h4>Silk Road Dumplings</h4>
+                            <p class="dish-desc">Hand-folded pork and chive dumplings</p>
+                            <p class="dish-price">¥68</p>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1599043513145-7eb8ee936a31?auto=format&fit=crop&w=400&q=80" alt="Wontons">
+                        <div class="dish-content">
+                            <h4>Golden Wontons</h4>
+                            <p class="dish-desc">Crispy wontons in chili oil</p>
+                            <p class="dish-price">¥58</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="menu-category fade-in">
+                <h3 class="category-title">
+                    <span class="category-number">二</span>
+                    Main Courses
+                </h3>
+                <div class="dishes-grid">
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1609501676725-7186f017a4b0?auto=format&fit=crop&w=400&q=80" alt="Peking Duck">
+                        <div class="dish-content">
+                            <h4>Imperial Peking Duck</h4>
+                            <p class="dish-desc">Slow-roasted with house-made glaze</p>
+                            <p class="dish-price">¥388</p>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" alt="Mapo Tofu">
+                        <div class="dish-content">
+                            <h4>Mapo Tofu Sichuan</h4>
+                            <p class="dish-desc">Silken tofu in spicy numbing sauce</p>
+                            <p class="dish-price">¥128</p>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1576718939391-0ff6c7e9a39b?auto=format&fit=crop&w=400&q=80" alt="Kung Pao Chicken">
+                        <div class="dish-content">
+                            <h4>Kung Pao Chicken</h4>
+                            <p class="dish-desc">Tender chicken with roasted peanuts</p>
+                            <p class="dish-price">¥168</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Specialties -->
+            <div class="menu-category fade-in">
+                <h3 class="category-title">
+                    <span class="category-number">三</span>
+                    Seafood Delicacies
+                </h3>
+                <div class="dishes-grid">
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" alt="Whole Fish">
+                        <div class="dish-content">
+                            <h4>Whole Steamed Fish</h4>
+                            <p class="dish-desc">Fresh fish with ginger and scallion</p>
+                            <p class="dish-price">¥268</p>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" alt="Shrimp">
+                        <div class="dish-content">
+                            <h4>Crystal Shrimp</h4>
+                            <p class="dish-desc">Sautéed with white wine and garlic</p>
+                            <p class="dish-price">¥198</p>
+                        </div>
+                    </article>
+                    <article class="dish-card">
+                        <img src="https://images.unsplash.com/photo-1576718939391-0ff6c7e9a39b?auto=format&fit=crop&w=400&q=80" alt="Scallops">
+                        <div class="dish-content">
+                            <h4>Scallop Supreme</h4>
+                            <p class="dish-desc">Delicate scallops with XO sauce</p>
+                            <p class="dish-price">¥258</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef's Specialties Section -->
+    <section id="specialties" class="specialties fade-in">
+        <div class="section-container">
+            <h2 class="section-title">Chef's Specialties</h2>
+
+            <div class="specialty-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">🐉</div>
+                    <h3>Dragon Feast</h3>
+                    <p>An 8-course culinary journey through regional Chinese cuisine, curated by our head chef.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">🏮</div>
+                    <h3>Lantern Menu</h3>
+                    <p>Seasonal selections featuring the finest ingredients sourced directly from China.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">⭐</div>
+                    <h3>Dynasty Tasting</h3>
+                    <p>A progressive menu of our most celebrated dishes, presented with artistic flair.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials fade-in">
+        <div class="section-container">
+            <h2 class="section-title">Guest Experiences</h2>
+
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carousel">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"The most authentic and refined Chinese dining experience. Every dish was a masterpiece."</p>
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-author">— Eleanor Chen, CEO</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Dynasty redefined my expectations for Chinese cuisine. The attention to detail is extraordinary."</p>
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-author">— James Richardson, Food Critic</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"A culinary temple. The ambiance, service, and food are all perfection."</p>
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-author">— Sophie Dubois, Chef</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-dots" id="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <button class="carousel-button prev" id="carousel-prev">❮</button>
+                <button class="carousel-button next" id="carousel-next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations fade-in">
+        <div class="section-container">
+            <h2 class="section-title">Reserve Your Experience</h2>
+
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="guest-name">Full Name</label>
+                        <input type="text" id="guest-name" name="name" required>
+                        <span class="field-error" id="error-name"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guest-email">Email</label>
+                        <input type="email" id="guest-email" name="email" required>
+                        <span class="field-error" id="error-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guest-phone">Phone</label>
+                        <input type="tel" id="guest-phone" name="phone" required>
+                        <span class="field-error" id="error-phone"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guest-date">Date</label>
+                        <input type="date" id="guest-date" name="date" required>
+                        <span class="field-error" id="error-date"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guest-time">Time</label>
+                        <select id="guest-time" name="time" required>
+                            <option value="">Select a time</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                            <option value="5:30 PM">5:30 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="6:30 PM">6:30 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                            <option value="7:30 PM">7:30 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                            <option value="8:30 PM">8:30 PM</option>
+                            <option value="9:00 PM">9:00 PM</option>
+                        </select>
+                        <span class="field-error" id="error-time"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guest-count">Number of Guests</label>
+                        <input type="number" id="guest-count" name="guests" min="1" max="12" required>
+                        <span class="field-error" id="error-guests"></span>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="guest-notes">Special Requests</label>
+                    <textarea id="guest-notes" name="notes" rows="4" placeholder="Any dietary requirements or special occasions?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Confirm Reservation</button>
+                <div class="success-message" id="success-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Dynasty</h4>
+                <p>Fine Chinese Dining</p>
+            </div>
+            <div class="footer-column">
+                <h4>Hours</h4>
+                <p>Tuesday - Thursday: 5PM - 11PM</p>
+                <p>Friday - Saturday: 5PM - Midnight</p>
+                <p>Sunday: 5PM - 10PM</p>
+                <p>Closed Mondays</p>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>📍 888 Golden Dragon Ave</p>
+                <p>📞 +1 (555) 888-8888</p>
+                <p>📧 hello@dynasty.restaurant</p>
+            </div>
+            <div class="footer-column">
+                <h4>Follow</h4>
+                <div class="social-links">
+                    <a href="#" title="Instagram">Instagram</a>
+                    <a href="#" title="WeChat">WeChat</a>
+                    <a href="#" title="Facebook">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dynasty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="dynasty-script.js"></script>
+</body>
+</html>
