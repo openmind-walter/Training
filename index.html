@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+  </script>
 </head>
 <body>
 
@@ -27,7 +31,26 @@
         <li><a href="#menu" class="nav-link">Menu</a></li>
         <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
         <li><a href="#reservations" class="nav-link">Reservations</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" aria-pressed="false" title="Toggle theme">
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <g class="sun-icon">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </g>
+          <g class="moon-icon" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </g>
+        </svg>
+      </button>
     </div>
   </nav>
 
@@ -406,6 +429,129 @@
       </div>
     </section>
 
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <span class="section-label fade-in">Get In Touch</span>
+          <h2 id="contact-heading" class="fade-in">Contact Maison Lumi&egrave;re</h2>
+          <p class="section-intro fade-in">Have a question or want to plan a special event? We would love to hear from you. Reach out to our team and we'll get back to you shortly.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Contact Form -->
+          <div class="contact-form-wrap fade-in">
+            <form id="contact-form" novalidate aria-label="Contact enquiry form">
+              <div class="form-grid">
+
+                <div class="form-group">
+                  <label for="contact-name">Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="text" id="contact-name" name="contact-name" autocomplete="name"
+                         required aria-required="true" placeholder="Jean Dupont">
+                  <span class="field-error" id="error-contact-name" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="email" id="contact-email" name="contact-email" autocomplete="email"
+                         required aria-required="true" placeholder="jean@example.com">
+                  <span class="field-error" id="error-contact-email" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number</label>
+                  <input type="tel" id="contact-phone" name="contact-phone" autocomplete="tel"
+                         placeholder="+65 9000 0000">
+                  <span class="field-error" id="error-contact-phone" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject <span class="required-mark" aria-hidden="true">*</span></label>
+                  <select id="subject" name="subject" required aria-required="true">
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="reservation">Reservation Inquiry</option>
+                    <option value="private-event">Private Event</option>
+                    <option value="wine-pairing">Wine Pairing Consultation</option>
+                    <option value="general-inquiry">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                  </select>
+                  <span class="field-error" id="error-subject" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <label for="contact-message">Message <span class="required-mark" aria-hidden="true">*</span></label>
+                  <textarea id="contact-message" name="contact-message" rows="5"
+                            required aria-required="true" placeholder="Tell us how we can help..."></textarea>
+                  <span class="field-error" id="error-contact-message" role="alert" aria-live="polite"></span>
+                </div>
+
+              </div>
+
+              <button type="submit" class="btn-primary btn-submit">Send Message</button>
+            </form>
+
+            <div id="contact-success" hidden role="alert" aria-live="assertive">
+              <div class="success-icon" aria-hidden="true">&#10022;</div>
+              <h3>Thank You</h3>
+              <p id="contact-success-message"></p>
+              <p class="success-note">We appreciate your message and will respond within 24&nbsp;hours.</p>
+            </div>
+          </div>
+
+          <!-- Contact Info & Map -->
+          <div class="contact-info-wrap fade-in">
+            <!-- Contact Info -->
+            <div class="contact-details">
+              <h3 class="contact-info-heading">Visit Us</h3>
+
+              <div class="info-item">
+                <span class="info-label">Address</span>
+                <address>15 Raffles Place, Level 38<br>Singapore 048616</address>
+              </div>
+
+              <div class="info-item">
+                <span class="info-label">Phone</span>
+                <a href="tel:+6568880001">+65 6888 0001</a>
+              </div>
+
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <a href="mailto:reservations@maisonlumiere.sg">reservations@maisonlumiere.sg</a>
+              </div>
+
+              <div class="info-item">
+                <span class="info-label">Hours</span>
+                <dl class="hours-info">
+                  <dt>Lunch</dt>
+                  <dd>Tue&ndash;Sun, 12:00&ndash;14:30</dd>
+                  <dt>Dinner</dt>
+                  <dd>Tue&ndash;Sun, 18:00&ndash;22:00</dd>
+                  <dt>Closed</dt>
+                  <dd>Mondays</dd>
+                </dl>
+              </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8106857814097!2d103.85326622346932!3d1.2876370986856346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190eac88b375%3A0x5064c487bc7c6c0!2s15%20Raffles%20Pl%2C%20Singapore%20048616!5e0!3m2!1sen!2s!4v1701234567890"
+                width="100%"
+                height="360"
+                style="border: none; border-radius: 2px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Maison Lumière Location on Google Maps">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <!-- ===================== FOOTER ===================== -->
@@ -456,6 +602,13 @@
       <p>&copy; 2026 Maison Lumi&egrave;re. All rights reserved. Crafted with care in Singapore.</p>
     </div>
   </footer>
+
+  <!-- ===================== WHATSAPP CHATBOT ===================== -->
+  <a href="https://wa.me/6568880001" class="whatsapp-btn" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.052 0-2.081.338-2.915.968l-.209.125-2.16-.567.576 2.095-.135.214a4.888 4.888 0 00-.468 2.41c0 2.694 2.191 4.881 4.88 4.881 1.298 0 2.516-.5 3.441-1.386 1.066-1.034 1.681-2.395 1.681-3.494 0-2.688-2.191-4.881-4.88-4.881M19.9 22H4.1C2.94 22 2 21.06 2 19.9V4.1C2 2.94 2.94 2 4.1 2h15.8c1.16 0 2.1.94 2.1 2.1v15.8c0 1.16-.94 2.1-2.1 2.1Z"/>
+    </svg>
+  </a>
 
   <script src="script.js"></script>
 </body>

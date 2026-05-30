@@ -2,6 +2,25 @@
    script.js — Maison Lumière
    ========================================================= */
 
+/* ---- Theme Toggle ---- */
+const themeToggle = document.getElementById('theme-toggle');
+const html = document.documentElement;
+
+const updateThemeUI = () => {
+  const currentTheme = html.getAttribute('data-theme') || 'dark';
+  themeToggle.setAttribute('aria-pressed', currentTheme === 'light');
+};
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = html.getAttribute('data-theme') || 'dark';
+  const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', nextTheme);
+  localStorage.setItem('theme', nextTheme);
+  updateThemeUI();
+});
+
+updateThemeUI();
+
 /* ---- Nav: scroll behavior ---- */
 const navbar    = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
@@ -188,4 +207,70 @@ form.addEventListener('submit', (e) => {
   formSuccess.hidden = false;
   formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
   form.reset();
+});
+
+/* ---- Contact Form ---- */
+const contactForm    = document.getElementById('contact-form');
+const contactSuccess = document.getElementById('contact-success');
+const contactSuccessMsg = document.getElementById('contact-success-message');
+
+function setContactError(fieldKey, message) {
+  const errorEl = document.getElementById(`error-${fieldKey}`);
+  const inputEl = document.getElementById(fieldKey);
+  if (errorEl) errorEl.textContent = message;
+  if (inputEl) inputEl.classList.add('error');
+}
+
+function clearContactErrors() {
+  document.querySelectorAll('#contact-form .field-error').forEach(el => { el.textContent = ''; });
+  document.querySelectorAll('#contact-form input.error, #contact-form select.error, #contact-form textarea.error').forEach(el => el.classList.remove('error'));
+}
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  clearContactErrors();
+
+  const name    = document.getElementById('contact-name').value.trim();
+  const email   = document.getElementById('contact-email').value.trim();
+  const phone   = document.getElementById('contact-phone').value.trim();
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('contact-message').value.trim();
+
+  let valid = true;
+
+  if (!name) {
+    setContactError('contact-name', 'Please enter your full name.');
+    valid = false;
+  }
+
+  if (!email) {
+    setContactError('contact-email', 'Please enter your email address.');
+    valid = false;
+  } else if (!isValidEmail(email)) {
+    setContactError('contact-email', 'Please enter a valid email address.');
+    valid = false;
+  }
+
+  if (!subject) {
+    setContactError('subject', 'Please select a subject.');
+    valid = false;
+  }
+
+  if (!message) {
+    setContactError('contact-message', 'Please enter your message.');
+    valid = false;
+  } else if (message.length < 10) {
+    setContactError('contact-message', 'Please enter at least 10 characters.');
+    valid = false;
+  }
+
+  if (!valid) return;
+
+  contactSuccessMsg.textContent =
+    `Thank you, ${name}! We've received your message and will get back to you shortly.`;
+
+  contactForm.hidden = true;
+  contactSuccess.hidden = false;
+  contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  contactForm.reset();
 });
