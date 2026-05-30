@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `update-git` command is a comprehensive 7-step deployment and security workflow that automates the entire process of pushing code to GitHub while ensuring quality, security, and proper documentation.
+The `updategit` command is a comprehensive 7-step deployment and security workflow that automates the entire process of pushing code to GitHub while ensuring quality, security, and proper documentation.
 
 ## 7-Step Workflow
 
