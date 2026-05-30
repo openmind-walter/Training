@@ -4,6 +4,8 @@
 
 The `updategit` command is a comprehensive 7-step deployment and security workflow that automates the entire process of pushing code to GitHub while ensuring quality, security, and proper documentation.
 
+![Maison Lumière Website - Live Deployment](../../screenshot.png)
+
 ## 7-Step Workflow
 
 ### Step 1: Validate GitHub Pages Setup ✓

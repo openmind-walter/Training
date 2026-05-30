@@ -11,6 +11,8 @@ Maison Lumière is a demonstration of modern web design principles applied to a 
 
 **Visit the live site:** [https://openmind-walter.github.io/Training/](https://openmind-walter.github.io/Training/)
 
+![Maison Lumière Website](screenshot.png)
+
 This project demonstrates:
 - Clean, semantic markup with full accessibility
 - Responsive design without frameworks
