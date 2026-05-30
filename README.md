@@ -1,9 +1,23 @@
-# Maison Lumière — Fine French Dining Website
+# Restaurant Showcase — Fine Dining Websites
 
-A sophisticated, fully responsive single-page restaurant booking website for an upscale French restaurant. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools.
+A collection of sophisticated, fully responsive single-page restaurant booking websites demonstrating modern web design principles. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools.
 
 **Live Site:** https://openmind-walter.github.io/Training/  
 **Repository:** https://github.com/openmind-walter/Training
+
+## 🍽 Projects
+
+### 1. Maison Lumière — French Fine Dining
+Classic European elegance with a dark luxe palette of charcoal, cream, and gold.
+
+**Files:** `index.html`, `styles.css`, `script.js`
+
+### 2. Dynasty — Chinese Fine Dining
+Luxury Asian dining experience with traditional red and gold accents.
+
+**Files:** `dynasty-index.html`, `dynasty-styles.css`, `dynasty-script.js`
+
+![Dynasty Website](dynasty-hero.png)
 
 ## About
 
@@ -22,24 +36,26 @@ This project demonstrates:
 
 ## 🎯 Features
 
+### Maison Lumière
 - **Elegant hero section** with Unsplash background, animated text entrance, and smooth scroll navigation
-- **Dynamic menu** with 9 dishes across 3 categories (Entrées, Plats Principaux, Desserts), each with food photography and hover effects
+- **Dynamic menu** with 9 dishes across 3 categories (Entrées, Plats Principaux, Desserts)
 - **Auto-rotating testimonials carousel** with manual navigation and dot indicators
-- **Fully functional reservation form** with client-side validation, error messaging, and success confirmation
-- **Mobile-first responsive design** — optimized for mobile (480px), tablet (768px), and desktop (1024px+)
-- **Accessibility first** — semantic HTML, ARIA labels, sufficient color contrast, form validation feedback
-- **Smooth scroll animations** using IntersectionObserver for fade-in effects on scroll
-- **Dark luxe palette** — deep charcoal, warm cream, and gold accents throughout
+- **Fully functional reservation form** with client-side validation
+- **Dark luxe palette** — deep charcoal, warm cream, and gold accents
+
+### Dynasty
+- **Dramatic hero section** with layered overlay, floating lantern animations, and Chinese imagery
+- **Premium menu showcase** with 3 categories (Appetizers, Main Courses, Seafood Delicacies)
+- **Chef's Specialties section** with specialty cards and emoji icons
+- **Auto-rotating testimonials carousel** with 5-star ratings
+- **Sophisticated reservation form** with real-time validation feedback
+- **Traditional Chinese elements** — calligraphy characters, red & gold accents, lantern motifs
+- **Responsive design** — optimized for mobile (480px), tablet (768px), and desktop (1024px+)
+- **Production-ready** — semantic HTML, smooth animations, complete accessibility
 
 ## 🚀 Quick Start
 
-No build step required. Just open the file:
-
-```bash
-open index.html
-```
-
-Or run a local server:
+No build step required. Run a local server:
 
 ```bash
 # Python
@@ -49,30 +65,54 @@ python3 -m http.server 8080
 npx serve .
 ```
 
-Then visit `http://localhost:8080`
+Then visit:
+- **Maison Lumière:** `http://localhost:8080`
+- **Dynasty:** `http://localhost:8080/dynasty-index.html`
+
+Or open files directly:
+```bash
+open index.html              # Maison Lumière
+open dynasty-index.html      # Dynasty
+```
 
 ## 📋 Project Structure
 
+### Maison Lumière
 ```
-.
-├── index.html          # All markup — 5 sections + nav + footer
-├── styles.css          # Complete styling with responsive breakpoints
-├── script.js           # Nav, carousel, form validation, fade-in animations
-├── CLAUDE.md           # Developer reference (design tokens, architecture notes)
-└── README.md           # This file
+├── index.html          # French restaurant markup
+├── styles.css          # Charcoal, cream & gold theme
+├── script.js           # Navigation, carousel, validation
+└── screenshot.png      # Website preview
 ```
+
+### Dynasty
+```
+├── dynasty-index.html       # Chinese restaurant markup
+├── dynasty-styles.css       # Crimson, gold & black theme
+├── dynasty-script.js        # Navigation, carousel, validation
+└── dynasty-hero.png         # Website preview
+```
+
+Both projects share architecture patterns but showcase different aesthetic directions.
 
 ## 🎨 Design & Styling
 
+### Maison Lumière Palette
 - **Typography**: Cormorant Garamond (headings) + Montserrat (body) via Google Fonts
 - **Color palette**:
   - Background: `#0e0e0e` (deep charcoal)
   - Text: `#f5efe6` (warm cream)
   - Accent: `#c9a84c` (gold)
-- **Layout**: Responsive CSS Grid and Flexbox with `clamp()` for fluid scaling
-- **Animations**: CSS keyframes (hero entrance) + IntersectionObserver (scroll fade-ins)
 
-See [CLAUDE.md](CLAUDE.md) for detailed design token reference.
+### Dynasty Palette
+- **Typography**: Playfair Display (luxury headings) + Montserrat (body)
+- **Color palette**:
+  - Background: `#0D0D0D` (near black)
+  - Primary: `#8B0000` (deep crimson red)
+  - Accent: `#D4AF37` (gold)
+  - Text: `#F5EFE6` (warm cream)
+
+Both use CSS custom properties, responsive CSS Grid/Flexbox with `clamp()`, and smooth animations with IntersectionObserver for scroll effects.
 
 ## 📝 Form Validation
 
